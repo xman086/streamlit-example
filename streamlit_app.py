@@ -10,7 +10,7 @@ col1, col2, col3 = st.columns(3)
 
 if st.button('打开新页面'):
     url = "<a href='/mypages/chat.py'>new page</a>"
-    st.write(url,true)
+    st.write(url,unsafe_allow_html=True)
 
 with col1:
     st.header("A cat")
