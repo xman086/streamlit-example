@@ -52,7 +52,7 @@ st.write("这是一个 Streamlit 应用程序。")
 # 设置Logo
 st.sidebar.header("")
 with st.sidebar:
-    img="<img src='https://static.streamlit.io/examples/cat.jpg' alt='DXC'/>"
+    img="<img width='250' height='200' src='https://static.streamlit.io/examples/cat.jpg' alt='DXC'/>"
     st.write(img,unsafe_allow_html=True)     
     
     
