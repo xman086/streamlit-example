@@ -50,7 +50,7 @@ st.header("主体")
 st.write("这是一个 Streamlit 应用程序。")
 
 # 设置Logo
-st.sidebar.header("GPT Practice")
+st.sidebar.header("")
 with st.sidebar:
     st.write("DXC Logo")
     
