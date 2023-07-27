@@ -10,9 +10,6 @@ import streamlit as st
 # 设置页面布局
 st.set_page_config(page_title="My Streamlit App", layout="wide")
 
-# 在侧边栏中添加组件
-st.sidebar.header("侧边栏")
-st.sidebar.slider("选择一个值", 0, 100)
 
 # 设置侧边栏宽度
 st.markdown(
@@ -38,11 +35,20 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-
+hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
 
 # 在主体中添加组件
 st.header("主体")
 st.write("这是一个 Streamlit 应用程序。")
+
+# 在侧边栏中添加组件
+st.sidebar.header("侧边栏")
+st.sidebar.slider("选择一个值", 0, 100)
 
 
 col1, col2, col3 = st.columns(3)
