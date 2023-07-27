@@ -18,6 +18,10 @@ st.markdown(
     .sidebar .sidebar-content {{
         width: 300px;
     }}
+    .sidebar {{
+       background:purple;
+       color:#ffffff;
+    }}
     </style>
     """,
     unsafe_allow_html=True,
