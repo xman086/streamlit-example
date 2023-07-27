@@ -19,7 +19,7 @@ st.markdown(
         width: 300px;
     }}
     .sidebar {{
-       background:purple;
+       background-color:purple;
        color:#ffffff;
     }}
     </style>
