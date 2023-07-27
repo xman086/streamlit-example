@@ -14,12 +14,16 @@ st.set_page_config(page_title="My Streamlit App", layout="wide")
 # 隐藏streamlit自带的sidebarnav并设置背景和字体颜色
 hide_menu_style = """
         <style>
-            div[data-testid='stSidebarNav'] {display: none;}
+            div[data-testid='stSidebarNav'] 
+            {
+              display: none;
+            }
             
-            section[data-testid="stSidebar"] {{
+            section[data-testid='stSidebar'] 
+            {
                background-color:purple;
                    color:#ffffff;
-            }}
+            }
         </style>
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
