@@ -52,6 +52,7 @@ st.write("这是一个 Streamlit 应用程序。")
 # 设置Logo
 st.sidebar.header("")
 with st.sidebar:
+    st.image("https://static.streamlit.io/examples/cat.jpg")
     st.write("DXC Logo")
     
 # 在侧边栏中添加组件
