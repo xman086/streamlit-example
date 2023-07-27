@@ -37,7 +37,8 @@ st.markdown(
 
 hide_menu_style = """
         <style>
-        #stSidebarNav {display: none;}
+        div[data-testid='stSidebarNav'] {display: none;}
+        
         </style>
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
