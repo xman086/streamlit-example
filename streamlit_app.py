@@ -11,36 +11,15 @@ import streamlit as st
 st.set_page_config(page_title="My Streamlit App", layout="wide")
 
 
-# 设置侧边栏宽度
-st.markdown(
-    f"""
-    <style>
-    
-    section[data-testid="stSidebar"] {{
-       background-color:purple;
-       color:#ffffff;
-    }}
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
-
-# 设置主体宽度
-st.markdown(
-    f"""
-    <style>
-    .main .block-container {{
-        max-width: 1200px;
-    }}
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
-
+# 隐藏streamlit自带的sidebarnav并设置背景和字体颜色
 hide_menu_style = """
         <style>
-        div[data-testid='stSidebarNav'] {display: none;}
-        
+            div[data-testid='stSidebarNav'] {display: none;}
+            
+            section[data-testid="stSidebar"] {{
+               background-color:purple;
+                   color:#ffffff;
+            }}
         </style>
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
@@ -53,27 +32,27 @@ st.write("这是一个 Streamlit 应用程序。")
 st.sidebar.header("")
 with st.sidebar:
     img="<img width='100' height='80' src='https://static.streamlit.io/examples/cat.jpg'/>"
-    st.write(img,unsafe_allow_html=True)     
-    
+    st.write(img,unsafe_allow_html=True)
     
 # 在侧边栏中添加组件
 st.sidebar.header("GPT Practice")
 with st.sidebar: 
+    url = "<a href='/chat' target='_self'>OpenAI Queries</a>"
+    st.write(url,unsafe_allow_html=True)
+    
     url = "<a href='/chat' target='_self'>Chat</a>"
     st.write(url,unsafe_allow_html=True)
     
-    url = "<a href='/chat' target='_self'>Chat2</a>"
+    url = "<a href='/chat' target='_self'>Add Document</a>"
     st.write(url,unsafe_allow_html=True)
-    
-    url = "<a href='/chat' target='_self'>Chat3</a>"
-    st.write(url,unsafe_allow_html=True)
+
+
+
+
 
     
 
 col1, col2, col3 = st.columns(3)
-
-
-
 
 with col1:
     st.header("A cat")
