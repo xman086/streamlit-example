@@ -50,11 +50,10 @@ st.header("主体")
 st.write("这是一个 Streamlit 应用程序。")
 
 # 设置Logo
-logo_col=st.columns(1)
 st.sidebar.header("")
 with st.sidebar:
-    with logo_col:
-       st.image("https://static.streamlit.io/examples/cat.jpg")
+    img="<img src='https://static.streamlit.io/examples/cat.jpg' alt='DXC'/>"
+    st.write(img,unsafe_allow_html=True)     
     
     
 # 在侧边栏中添加组件
