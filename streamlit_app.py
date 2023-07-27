@@ -37,7 +37,7 @@ st.markdown(
 
 hide_menu_style = """
         <style>
-        #stSidebarNav {visibility: hidden;}
+        #stSidebarNav {display: none;}
         </style>
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
@@ -53,7 +53,7 @@ st.sidebar.slider("选择一个值", 0, 100)
 st.sidebar.header("栏位2")
 with st.sidebar:
  with st.echo():
-    url = "<a href='/pages/01chat'>Chat</a>"
+    url = "<a href='/pages/01chat' target='_blank'>Chat</a>"
     st.write(url,unsafe_allow_html=True)
 
     
