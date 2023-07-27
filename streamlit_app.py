@@ -16,7 +16,7 @@ st.markdown(
     f"""
     <style>
     
-    section[data-testid="stSidebar"]: {{
+    section[data-testid="stSidebar"] {{
        background-color:purple;
        color:#ffffff;
     }}
