@@ -49,11 +49,13 @@ st.markdown(hide_menu_style, unsafe_allow_html=True)
 st.header("主体")
 st.write("这是一个 Streamlit 应用程序。")
 
+# 设置Logo
+st.sidebar.header("GPT Practice")
+with st.sidebar:
+    st.write("DXC Logo")
+    
 # 在侧边栏中添加组件
-st.sidebar.header("侧边栏")
-st.sidebar.slider("选择一个值", 0, 100)
-
-st.sidebar.header("栏位2")
+st.sidebar.header("GPT Practice")
 with st.sidebar: 
     url = "<a href='/chat' target='_self'>Chat</a>"
     st.write(url,unsafe_allow_html=True)
