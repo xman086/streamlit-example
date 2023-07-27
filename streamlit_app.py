@@ -5,6 +5,42 @@ import pandas as pd
 import streamlit as st
 
 
+# 设置页面布局
+st.set_page_config(page_title="My Streamlit App", layout="wide")
+
+# 设置侧边栏宽度
+st.markdown(
+    f"""
+    <style>
+    .sidebar .sidebar-content {{
+        width: 300px;
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+# 设置主体宽度
+st.markdown(
+    f"""
+    <style>
+    .main .block-container {{
+        max-width: 1200px;
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+# 在侧边栏中添加组件
+st.sidebar.header("侧边栏")
+st.sidebar.slider("选择一个值", 0, 100)
+
+# 在主体中添加组件
+st.header("主体")
+st.write("这是一个 Streamlit 应用程序。")
+
+
 col1, col2, col3 = st.columns(3)
 
 
