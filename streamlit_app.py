@@ -49,10 +49,14 @@ st.write("这是一个 Streamlit 应用程序。")
 # 在侧边栏中添加组件
 st.sidebar.header("侧边栏")
 st.sidebar.slider("选择一个值", 0, 100)
+
 st.sidebar.header("栏位2")
-if st.button('打开新页面'):
-    url = "<a href='/mypages/chat.py'>new page</a>"
+with st.sidebar:
+ with st.echo():
+    url = "<a href='/pages/01chat'>Chat</a>"
     st.write(url,unsafe_allow_html=True)
+
+    
 
 col1, col2, col3 = st.columns(3)
 
