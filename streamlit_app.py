@@ -15,10 +15,8 @@ st.set_page_config(page_title="My Streamlit App", layout="wide")
 st.markdown(
     f"""
     <style>
-    .sidebar .sidebar-content {{
-        width: 300px;
-    }}
-    .sidebar {{
+    
+    section[data-testid="stSidebar"]: {{
        background-color:purple;
        color:#ffffff;
     }}
