@@ -5,12 +5,14 @@ import pandas as pd
 import streamlit as st
 
 
-# 在侧边栏中添加组件
-st.sidebar.header("侧边栏")
-st.sidebar.slider("选择一个值", 0, 100)
+
 
 # 设置页面布局
 st.set_page_config(page_title="My Streamlit App", layout="wide")
+
+# 在侧边栏中添加组件
+st.sidebar.header("侧边栏")
+st.sidebar.slider("选择一个值", 0, 100)
 
 # 设置侧边栏宽度
 st.markdown(
