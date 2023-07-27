@@ -52,7 +52,7 @@ st.write("这是一个 Streamlit 应用程序。")
 # 设置Logo
 st.sidebar.header("")
 with st.sidebar:
-    img="<img width='100' height='80' src='https://static.streamlit.io/examples/cat.jpg' alt='DXC'/>"
+    img="<img width='100' height='80' src='https://static.streamlit.io/examples/cat.jpg'/>"
     st.write(img,unsafe_allow_html=True)     
     
     
@@ -60,6 +60,12 @@ with st.sidebar:
 st.sidebar.header("GPT Practice")
 with st.sidebar: 
     url = "<a href='/chat' target='_self'>Chat</a>"
+    st.write(url,unsafe_allow_html=True)
+    
+    url = "<a href='/chat' target='_self'>Chat2</a>"
+    st.write(url,unsafe_allow_html=True)
+    
+    url = "<a href='/chat' target='_self'>Chat3</a>"
     st.write(url,unsafe_allow_html=True)
 
     
