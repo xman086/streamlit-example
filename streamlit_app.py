@@ -24,6 +24,7 @@ hide_menu_style = """
                background-color:#5f249f;
                color:#ffffff;
             }
+            
             .mymenu:link,
             .mymenu:hover,
             .mymenu:active,
@@ -31,12 +32,6 @@ hide_menu_style = """
             {
                  color:#fff;
                  text-decoration:none;
-            }
-
-            .mymenu:hover
-            {
-              background-color:gray;
-              border: 1px solid blue;
             }
             
             .mytitle
