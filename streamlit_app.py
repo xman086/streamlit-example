@@ -24,6 +24,12 @@ hide_menu_style = """
                background-color:purple;
                    color:#ffffff;
             }
+            .mymenu a,
+            .mymenu a:hover,
+            .mymenu a:active
+            {
+                 color:#fff;
+            }
         </style>
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
@@ -41,6 +47,9 @@ with st.sidebar:
 # 在侧边栏中添加组件
 st.sidebar.header("GPT Practice")
 with st.sidebar: 
+    url = "<div class='mymenu'>"
+    st.write(url,unsafe_allow_html=True)
+        
     url = "<a href='/chat' target='_self'>OpenAI Queries</a>"
     st.write(url,unsafe_allow_html=True)
     
@@ -48,6 +57,8 @@ with st.sidebar:
     st.write(url,unsafe_allow_html=True)
     
     url = "<a href='/chat' target='_self'>Add Document</a>"
+    st.write(url,unsafe_allow_html=True)
+    url = "</div>"
     st.write(url,unsafe_allow_html=True)
 
 
