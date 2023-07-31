@@ -22,7 +22,7 @@ hide_menu_style = """
             section[data-testid='stSidebar'] 
             {
                background-color:purple;
-                   color:#ffffff;
+               color:#ffffff;
             }
             .mymenu:link,
             .mymenu:hover,
@@ -30,6 +30,7 @@ hide_menu_style = """
             .mymenu:visited
             {
                  color:#fff;
+                 text-decoration:none;
             }
         </style>
         """
