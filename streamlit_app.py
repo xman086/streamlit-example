@@ -32,6 +32,11 @@ hide_menu_style = """
                  color:#fff;
                  text-decoration:none;
             }
+            .mytitle
+            {
+              color:#fff,
+              font-size:16px;
+            }
         </style>
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
@@ -45,9 +50,15 @@ st.sidebar.header("")
 with st.sidebar:
     img="<img width='100' height='80' src='https://static.streamlit.io/examples/cat.jpg'/>"
     st.write(img,unsafe_allow_html=True)
-    
+
+# 设置title
+st.sidebar.header("")
+with st.sidebar:
+        title="<span class="mytitle">GPT Practice</span>"
+        st.write(title,unsafe_allow_html=True)
+
 # 在侧边栏中添加组件
-st.sidebar.header("GPT Practice")
+st.sidebar.header("")
 with st.sidebar: 
             
     url = "<a class='mymenu' href='/chat' target='_self'>OpenAI Queries</a>"
