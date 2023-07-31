@@ -34,7 +34,7 @@ hide_menu_style = """
             }
             .mytitle
             {
-              color:#fff,
+              color:#fff;
               font-size:16px;
             }
         </style>
