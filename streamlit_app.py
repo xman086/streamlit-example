@@ -54,7 +54,7 @@ with st.sidebar:
 # 设置title
 st.sidebar.header("")
 with st.sidebar:
-        title="<span class="mytitle">GPT Practice</span>"
+        title="<span class='mytitle'>GPT Practice</span>"
         st.write(title,unsafe_allow_html=True)
 
 # 在侧边栏中添加组件
