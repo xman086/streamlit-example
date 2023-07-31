@@ -70,11 +70,6 @@ with st.sidebar:
     st.write(url,unsafe_allow_html=True)  
 
 
-col1, col2 = st.beta_columns([3, 1])
-data = np.random.randn(10, 1)
 
-col1.subheader("A wide column with a chart")
-col1.line_chart(data)
+st.write("AI Chat")
 
-col2.subheader("A narrow column with the data")
-col2.write(data)
