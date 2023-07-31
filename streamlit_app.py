@@ -24,9 +24,10 @@ hide_menu_style = """
                background-color:purple;
                    color:#ffffff;
             }
-            .mymenu,
+            .mymenu:link,
             .mymenu:hover,
-            .mymenu:active
+            .mymenu:active,
+            .mymenu:visited
             {
                  color:#fff;
             }
