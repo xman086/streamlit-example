@@ -60,7 +60,7 @@ with st.sidebar:
 st.sidebar.header("")
 with st.sidebar: 
             
-    url = "<a class='mymenu' href='/chat' target='_self'>OpenAI Queries</a>"
+    url = "<a class='mymenu' href='/#' target='_self'>OpenAI Queries</a>"
     st.write(url,unsafe_allow_html=True)
     
     url = "<a class='mymenu' href='/chat' target='_self'>Chat</a>"
