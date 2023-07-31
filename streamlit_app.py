@@ -32,6 +32,13 @@ hide_menu_style = """
                  color:#fff;
                  text-decoration:none;
             }
+
+            .mymenu:hover
+            {
+              background-color:gray;
+              border: 1px solid blue;
+            }
+            
             .mytitle
             {
               color:#fff;
