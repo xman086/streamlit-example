@@ -47,7 +47,7 @@ st.write("这是一个 Streamlit 应用程序。")
 # 设置Logo
 st.sidebar.header("")
 with st.sidebar:
-    img="<img width='100' height='80' src='https://static.streamlit.io/examples/cat.jpg'/>"
+    img="<img width='140' height='80' src='https://dxcazureopenai01str.blob.core.windows.net/folder/DXC Logo_White RGB.png'/>"
     st.write(img,unsafe_allow_html=True)
 
 # 设置title
