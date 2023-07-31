@@ -8,7 +8,7 @@ import streamlit as st
 
 
 # 设置页面布局
-st.set_page_config(page_title="My Streamlit App", layout="wide")
+st.set_page_config(page_title="DXC AI Practice", layout="wide")
 
 
 # 隐藏streamlit自带的sidebarnav并设置背景和字体颜色
