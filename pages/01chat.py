@@ -20,7 +20,7 @@ hide_menu_style = """
             
             section[data-testid='stSidebar'] 
             {
-               background-color:purple;
+               background-color:#5f249f;
                color:#ffffff;
             }
             .mymenu:link,
